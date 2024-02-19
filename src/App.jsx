@@ -42,7 +42,7 @@ function App() {
 
   const handleClick = (id) => {
     console.log("test");
-    setSelectectedId(id);
+    setSelectectedId(id !== selectedId ? id : null);
     setAttempts(attempts + 1);
   };
 
